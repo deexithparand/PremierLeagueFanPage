@@ -1,0 +1,51 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+/*
+Home Page Body
+*/
+
+/*
+.bgimage{
+    margin-top: 10px;
+    height:auto;
+    width:100%;
+}*/
+
+div.mid_container{
+    display:grid;
+    box-sizing: border-box;
+    padding: 25px;
+    margin:25px;
+    
+    height:auto;
+    width:auto;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:30px;
+}
+
+div.mid_container div{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+/*All Images Resized*/
+.testimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
