@@ -4,7 +4,7 @@
 }
 
 .main_body{
-    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)),url("images/backepl2.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3)),url("../images/backepl2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
