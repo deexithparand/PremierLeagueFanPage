@@ -80,18 +80,23 @@
     font-family: monospace;
 }
 
+
 div.line1{
+    display: flex; /* Keep them side by side */
     border-bottom: rgb(128, 255, 1) solid 2px;
     max-height: auto;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;/*For space btw username and password*/
 }
 
 div.line2{
+    display: flex; /* Keep them side by side */
     border-bottom: rgb(128, 255, 1) solid 2px;
     max-height: auto;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;/*For space btw password and button*/
+}
+
+div.login div{
+    padding-bottom: 10px;/*For space btw input and border, for both username and password*/
 }
 
 
