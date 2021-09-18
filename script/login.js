@@ -1,5 +1,6 @@
 function check_start(){
     document.getElementById("register").style.display = "none";
+    document.getElementById("radio_btn1").checked = true;
 }
 
 function check() {
