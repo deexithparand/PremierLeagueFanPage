@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <head>
-    <title>Login Demo</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="../styles/login_styles.css">
     <script src="https://kit.fontawesome.com/4917270fc0.js" crossorigin="anonymous"></script>
-    <script src="../script/login.js" type="text/javaScript"></script>
+    <script src="../script/login.js" type="text/javascript"></script>
 </head>
-<body class="main_body" id="main_body">
+<body class="main_body" id="main_body" onload="check_start()">
     <div class="toggle_button">
         <!--Using label to indirectly check radio-->
         <label class="btndiv1">
-            <input type="radio" class="radio_btn" id="radio_btn1" onclick="check1(0)" name="os">
+            <input type="radio" class="radio_btn" id="radio_btn1" onclick="check()" name="os">
             <div class="btncircle"></div>
         </label>
         <label class="btndiv2">
-            <input type="radio" class="radio_btn" id="radio_btn2" onclick="check1(1)" name="os">
+            <input type="radio" class="radio_btn" id="radio_btn2" onclick="check()" name="os">
             <div class="btncircle"></div>
         </label>
     </div>

@@ -1,11 +1,15 @@
-function check1(x) {
-    if(x==0){
-        document.getElementById("radio_btn2").style.display = "none";
-        document.getElementById("radio_btn1").style.display = "";
+function check_start(){
+    document.getElementById("register").style.display = "none";
+}
+
+function check() {
+    if(document.getElementById("radio_btn1").checked == true){
+        document.getElementById("register").style.display = "none";
+        document.getElementById("login").style.display = "";
     }
-    else{
-        document.getElementById("radio_btn1").style.display = "none";
-        document.getElementById("radio_btn2").style.display = "";
+    else if(document.getElementById("radio_btn2").checked == true){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("register").style.display = "";
     }
 }
 
