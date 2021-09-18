@@ -3,8 +3,21 @@
     <title>Login Demo</title>
     <link rel="stylesheet" type="text/css" href="../styles/login_styles.css">
     <script src="https://kit.fontawesome.com/4917270fc0.js" crossorigin="anonymous"></script>
+    <script src="../script/login.js" type="text/javaScript"></script>
 </head>
 <body class="main_body" id="main_body">
+    <div class="toggle_button">
+        <!--Using label to indirectly check radio-->
+        <label class="btndiv1">
+            <input type="radio" class="radio_btn" id="radio_btn1" onclick="check1(0)" name="os">
+            <div class="btncircle"></div>
+        </label>
+        <label class="btndiv2">
+            <input type="radio" class="radio_btn" id="radio_btn2" onclick="check1(1)" name="os">
+            <div class="btncircle"></div>
+        </label>
+    </div>
+    
     <div></div>
     <div></div>
     <div></div>
@@ -12,8 +25,8 @@
     <div class="login" id="login">
         <h1>Login</h1><br>
         <div class="line1">
-        <label for="email"><i class="fas fa-futbol" id="icon"></i></label>
-        <input class="email" type="text" placeholder="Username" autocomplete="off" id="email" name="email"> 
+        <label for="username"><i class="fas fa-futbol" id="icon"></i></label>
+        <input class="username" type="text" placeholder="Username" autocomplete="off" id="username" name="email"> 
         </div>  
         <div class="line2">
         <label for="pass"><i class="fas fa-lock" id="icon"></i></label>
@@ -21,4 +34,22 @@
         </div>
         <input type="button" class="btn" value="Sign-In">
     </div>
+
+    <div class="register" id="register">
+        <h1>Newbie</h1><br>
+        <div class="line3">
+        <label for="email"><i class="far fa-envelope" id="icon"></i></label>
+        <input class="email" type="text" placeholder="Email" autocomplete="off" id="email" name="pass">
+        </div>
+        <div class="line1">
+        <label for="username"><i class="fas fa-futbol" id="icon"></i></label>
+        <input class="username" type="text" placeholder="Username" autocomplete="off" id="username" name="email"> 
+        </div>  
+        <div class="line2">
+        <label for="pass"><i class="fas fa-lock" id="icon"></i></label>
+        <input class="pass" type="text" placeholder="Password" autocomplete="off" id="pass" name="pass">
+        </div>
+        <input type="button" class="btn" value="Register">
+    </div>
+
 </body>

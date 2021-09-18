@@ -70,7 +70,7 @@
 }
 
 
-#email,#pass{
+#username,#pass,#email{
     color: white;
     border: none;
     outline: none;
@@ -122,31 +122,107 @@ div.login div{
 .login{
     background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.1));
     padding:100px;
+    /*
+    display: none;*/
 }
 
-/*placeholder Settings*/
+/*Register Here*/
+div.line3{
+    display: flex; /* Keep them side by side */
+    border-bottom: rgb(128, 255, 1) solid 2px;
+    max-height: auto;
+    margin-bottom: 25px;/*For space btw password and button*/
+}
 
+.register{
+    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.8));
+    padding: 70px;
+    padding-right: 100px;
+    padding-left: 100px;
+    /*
+    display: none;*/
+}
 
-/* 
-Login -> Using Flex (after creating column flex and translate vertical) 
+div.register div{
+    padding-bottom: 10px;/*For space btw input and border, for both username and password*/
+}
 
-#main_body{
-    color: rgb(63, 63, 63);
-    font-family: monospace;
-    font-weight: 2px;
-    font-size: x-large; 
+#register h1:hover{
+    cursor:pointer;
+}
 
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    transform: translate(0,15em);
-    border: black solid 2px;
+/*Instead of using border of underline tag*/
+#register h1::after{
+    content:'';
+    display: block;
+    width:0;
+    height: 4px;
+    background: rgb(128, 255, 1);
+    transition: width .5s;
+}
+
+#register h1:hover::after{
+    width: 52%; 
+    transition: width .5s;
+}
+
+div.toggle_button{
+    position: absolute;
+    display: inline-flex;
+    gap: 7px;
+    align-self: center;
+    justify-self: center;
+    top: 75%;
+    left: 60%;
+}
+
+.radio_btn{
+    display: none;
+    cursor: pointer;
+}
+
+div.btncircle{
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    border-radius: 50%; 
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+div.btncircle::after{
+    content: '';
+    display: block;
+    height:100%;
+    width:100%;
+    background-color: chartreuse;
+    border-radius: 50%; 
+    cursor:pointer;
+
+    transform: scale(0);
+    transition: transform 0.25s;
+}
+
+.radio_btn:checked + div.btncircle::after{
+    transform: scale(1);
 }
 
 
-#main_body h1{
-    margin-right: 11.5%;
-}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
