@@ -7,10 +7,26 @@ function check() {
     if(document.getElementById("radio_btn1").checked == true){
         document.getElementById("register").style.display = "none";
         document.getElementById("login").style.display = "";
+
+        document.getElementById("toggle_button").style.top = "80%";
+        document.getElementById("btn").style.marginTop = "10px";
     }
     else if(document.getElementById("radio_btn2").checked == true){
         document.getElementById("login").style.display = "none";
         document.getElementById("register").style.display = "";
+
+        document.getElementById("toggle_button").style.top = "80%";
+    }
+}
+
+function checklink(p){
+    if(p==1){
+        document.getElementById("radio_btn2").checked = true;
+
+        document.getElementById("login").style.display = "none";
+        document.getElementById("register").style.display = "";
+        
+        document.getElementById("toggle_button").style.top = "80%";
     }
 }
 

@@ -85,7 +85,7 @@ div.line1{
     display: flex; /* Keep them side by side */
     border-bottom: rgb(128, 255, 1) solid 2px;
     max-height: auto;
-    margin-bottom: 25px;/*For space btw username and password*/
+    margin-bottom: 25px; /*For space btw username and password*/
 }
 
 div.line2{
@@ -110,7 +110,8 @@ div.login div{
     font-weight: bold;
     font-family: monospace;
     font-size: large;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     transition: all 0.3s;
 }
 
@@ -122,8 +123,7 @@ div.login div{
 .login{
     background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.1));
     padding:100px;
-    /*
-    display: none;*/
+    /*display: none;*/
 }
 
 /*Register Here*/
@@ -136,7 +136,7 @@ div.line3{
 
 .register{
     background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.1));
-    padding: 70px;
+    padding: 100px;
     padding-right: 100px;
     padding-left: 100px;
     /*display: none;*/
@@ -161,8 +161,15 @@ div.register div{
 }
 
 #register h1:hover::after{
-    width: 52%; 
+    width: 50%; 
     transition: width .5s;
+}
+
+
+#terms{
+    all:initial;
+    font-size: initial;
+    color: whitesmoke;
 }
 
 div.toggle_button{
@@ -171,7 +178,7 @@ div.toggle_button{
     gap: 7px;
     align-self: center;
     justify-self: center;
-    top: 75%;
+    top: 80%;
     left: 60%;
 }
 
@@ -205,6 +212,30 @@ div.btncircle::after{
 .radio_btn:checked + div.btncircle::after{
     transform: scale(1);
 }
+
+#imnew{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.imnew{
+    text-decoration: none;
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: aquamarine;
+    transform: scale(0);
+    transition: transform 0.25s;
+}
+
+
+.imnew:hover{
+    cursor:pointer;
+    transform: scale(1);
+    color: aquamarine;
+    text-shadow:0 0 7px aquamarine, 0 0 10px aquamarine,0 0 21px aquamarine;
+}
+
+
 
 
 
